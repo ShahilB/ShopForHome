@@ -1,0 +1,99 @@
+<div class="home-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to ShopForHome</h1>
+          <p>Discover beautiful home décor products to transform your living space</p>
+          <a routerLink="/products" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/hero-home.jpg" alt="Beautiful home interior" />
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <div class="container">
+          <h2>Shop by Category</h2>
+          <div class="categories-grid">
+            @for (category of categories; track category.id) {
+              <div class="category-card" [routerLink]="['/products']" [queryParams]="{categoryId: category.id}">
+                <div class="category-image">
+                  <img [src]="category.imageUrl || '/assets/images/placeholder.jpg'" [alt]="category.name" />
+                </div>
+                <div class="category-info">
+                  <h3>{{ category.name }}</h3>
+                  <p>{{ category.productCount }} products</p>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="featured-section">
+        <div class="container">
+          <h2>Featured Products</h2>
+          <div class="products-grid">
+            @for (product of featuredProducts; track product.id) {
+              <div class="product-card" [routerLink]="['/products', product.id]">
+                <div class="product-image">
+                  <img [src]="product.imageUrl " [alt]="product.name" />
+                  <!-- @if (product.isOnSale) {
+                    <div class="sale-badge">{{ product.discountPercentage }}% OFF</div>
+                  } -->
+                </div>
+                <div class="product-info">
+                  <h3>{{ product.name }}</h3>
+                  <p class="product-category">{{ product.categoryName }}</p>
+                  <div class="product-rating">
+                    <span class="stars">{{ getStars(product.rating) }}</span>
+                    <span class="rating-text">({{ product.reviewCount }})</span>
+                  </div>
+                  <div class="product-price">
+                    <!-- @if (product.isOnSale) {
+                      <span class="original-price">₹{{ product.price }}</span>
+                      <span class="sale-price">₹{{ product.effectivePrice }}</span>
+                    } @else { -->
+                      <span class="price">₹{{ product.price }}</span>
+                    <!-- } -->
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+          <div class="view-all">
+            <a routerLink="/products" class="btn-secondary">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature">
+              <div class="feature-icon">🚚</div>
+              <h3>Free Shipping</h3>
+              <p>Free shipping on orders over ₹500</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">↩️</div>
+              <h3>Easy Returns</h3>
+              <p>30-day return policy</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🔒</div>
+              <h3>Secure Payment</h3>
+              <p>Your payment information is safe</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">📞</div>
+              <h3>24/7 Support</h3>
+              <p>Customer support available anytime</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>

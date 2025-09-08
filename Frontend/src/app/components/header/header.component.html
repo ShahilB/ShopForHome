@@ -1,0 +1,109 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="nav-brand">
+        <a routerLink="/" class="brand-link">
+          <h1>ShopForHome</h1>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <div class="search-container">
+          <input 
+            type="text" 
+            placeholder="Search products..." 
+            class="search-input"
+            #searchInput
+            (keyup.enter)="onSearch(searchInput.value)"
+          >
+          <button 
+            class="search-btn"
+            (click)="onSearch(searchInput.value)"
+          >
+            🔍
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a routerLink="/products" routerLinkActive="active">Products</a>
+        <a routerLink="/categories" routerLinkActive="active">Categories</a>
+        
+        @if (authService.isAuthenticated()) {
+          <!-- User Menu -->
+          <div class="user-menu">
+            <a routerLink="/wishlist" class="nav-icon" title="Wishlist">
+              ❤️
+              @if (cartService.wishlistItemCount() > 0) {
+                <span class="badge">{{ cartService.wishlistItemCount() }}</span>
+              }
+            </a>
+            
+            <a routerLink="/cart" class="nav-icon" title="Shopping Cart">
+              🛒
+              @if (cartService.cartItemCount() > 0) {
+                <span class="badge">{{ cartService.cartItemCount() }}</span>
+              }
+            </a>
+
+            <div class="dropdown">
+              <button class="dropdown-toggle">
+                👤 {{ authService.currentUser()?.firstName }}
+              </button>
+              <div class="dropdown-menu">
+                <a routerLink="/profile">Profile</a>
+                <a routerLink="/orders">My Orders</a>
+                @if (authService.isAdmin()) {
+                  <div class="dropdown-divider"></div>
+                  <a routerLink="/admin">Admin Dashboard</a>
+                }
+                <div class="dropdown-divider"></div>
+                <button (click)="logout()">Logout</button>
+              </div>
+            </div>
+          </div>
+        } @else {
+          <!-- Guest Menu -->
+          <div class="auth-links">
+            <a routerLink="/login" routerLinkActive="active">Login</a>
+            <a routerLink="/register" routerLinkActive="active" class="btn-primary">Sign Up</a>
+          </div>
+        }
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" (click)="toggleMobileMenu()">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    @if (showMobileMenu) {
+      <div class="mobile-menu">
+        <a routerLink="/products" (click)="closeMobileMenu()">Products</a>
+        <a routerLink="/categories" (click)="closeMobileMenu()">Categories</a>
+        
+        @if (authService.isAuthenticated()) {
+          <a routerLink="/wishlist" (click)="closeMobileMenu()">
+            Wishlist ({{ cartService.wishlistItemCount() }})
+          </a>
+          <a routerLink="/cart" (click)="closeMobileMenu()">
+            Cart ({{ cartService.cartItemCount() }})
+          </a>
+          <a routerLink="/profile" (click)="closeMobileMenu()">Profile</a>
+          <a routerLink="/orders" (click)="closeMobileMenu()">My Orders</a>
+          @if (authService.isAdmin()) {
+            <a routerLink="/admin" (click)="closeMobileMenu()">Admin Dashboard</a>
+          }
+          <button (click)="logout()" class="mobile-logout">Logout</button>
+        } @else {
+          <a routerLink="/login" (click)="closeMobileMenu()">Login</a>
+          <a routerLink="/register" (click)="closeMobileMenu()">Sign Up</a>
+        }
+      </div>
+    }
+  </nav>
+</header>
