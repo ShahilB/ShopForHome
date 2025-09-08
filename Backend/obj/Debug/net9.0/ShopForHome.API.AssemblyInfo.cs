@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopForHome.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c3a3c63cb013a20cf912772151b0faabbc06e77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b969f6b104ff9cf5126aa0fb20c0905036bde94")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopForHome.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopForHome.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

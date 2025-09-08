@@ -4907,11 +4907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj",
+      "projectUniqueName": "C:\\Users\\Shahil\\Desktop\\ShopForHome\\Backend\\ShopForHome.API.csproj",
       "projectName": "ShopForHome.API",
-      "projectPath": "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj",
+      "projectPath": "C:\\Users\\Shahil\\Desktop\\ShopForHome\\Backend\\ShopForHome.API.csproj",
       "packagesPath": "C:\\Users\\Shahil\\.nuget\\packages\\",
-      "outputPath": "D:\\ShopForHome\\Backend\\obj\\",
+      "outputPath": "C:\\Users\\Shahil\\Desktop\\ShopForHome\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
