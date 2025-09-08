@@ -10,7 +10,6 @@
         "dependencies": {
           "CsvHelper": "33.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
-          "Microsoft.AspNetCore.OpenApi": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
           "Swashbuckle.AspNetCore": "9.0.4"
@@ -76,17 +75,6 @@
         },
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "9.0.8.0",
-            "fileVersion": "9.0.825.36808"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.OpenApi/9.0.8": {
-        "dependencies": {
-          "Microsoft.OpenApi": "1.6.25"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
             "assemblyVersion": "9.0.8.0",
             "fileVersion": "9.0.825.36808"
           }
@@ -1094,13 +1082,6 @@
       "sha512": "sha512-pEuE/xaXHk2Rr2YiTraS7i2MNoTXSnX79VlJcdKx9MczrhDfBO4tHdF4HWOo542WPbjSeZx2PFjmHygo0XnK3Q==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.8",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.OpenApi/9.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BwF9sQCKmvu93C/pmKxJjPhF5fFB23MEcgTsGL+7W3wKLYawS4lyFSL5/qh00IJzuADLf+1SmvxMaphbyZYqQQ==",
-      "path": "microsoft.aspnetcore.openapi/9.0.8",
-      "hashPath": "microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",

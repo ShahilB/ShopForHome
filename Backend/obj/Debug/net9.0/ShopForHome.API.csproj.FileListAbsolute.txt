@@ -11,7 +11,6 @@ d:\ShopForHome\Backend\bin\Debug\net9.0\Azure.Identity.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\CsvHelper.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\Humanizer.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-d:\ShopForHome\Backend\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 d:\ShopForHome\Backend\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -165,3 +164,4 @@ d:\ShopForHome\Backend\obj\Debug\net9.0\refint\ShopForHome.API.dll
 d:\ShopForHome\Backend\obj\Debug\net9.0\ShopForHome.API.pdb
 d:\ShopForHome\Backend\obj\Debug\net9.0\ShopForHome.API.genruntimeconfig.cache
 d:\ShopForHome\Backend\obj\Debug\net9.0\ref\ShopForHome.API.dll
+D:\ShopForHome\backend\obj\Debug\net9.0\ShopForHome.API.sourcelink.json

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj": {}
+    "D:\\ShopForHome\\backend\\ShopForHome.API.csproj": {}
   },
   "projects": {
-    "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj": {
+    "D:\\ShopForHome\\backend\\ShopForHome.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj",
+        "projectUniqueName": "D:\\ShopForHome\\backend\\ShopForHome.API.csproj",
         "projectName": "ShopForHome.API",
-        "projectPath": "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj",
+        "projectPath": "D:\\ShopForHome\\backend\\ShopForHome.API.csproj",
         "packagesPath": "C:\\Users\\Shahil\\.nuget\\packages\\",
-        "outputPath": "D:\\ShopForHome\\Backend\\obj\\",
+        "outputPath": "D:\\ShopForHome\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

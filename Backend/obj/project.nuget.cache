@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QS8IgRyW0Do=",
+  "dgSpecHash": "YVAopzjH+rc=",
   "success": true,
-  "projectFilePath": "D:\\ShopForHome\\Backend\\ShopForHome.API.csproj",
+  "projectFilePath": "D:\\ShopForHome\\backend\\ShopForHome.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shahil\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Shahil\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
